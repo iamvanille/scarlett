@@ -390,6 +390,17 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
 }
+/*
+.gallery_portfolio:{
+  display: grid;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 150px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 30px;
+  max-width: device-width;
+}
 
 .gallery {
   display: grid;
@@ -526,6 +537,24 @@ h6, .h6 {
   grid-column-end: 5;
   grid-row-start: 11;
   grid-row-end: 13;
+}
+*/
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .lead {
@@ -10298,6 +10327,7 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
 #portfolio .portfolio-item {
   max-width: 50rem;
   margin-left: auto;
@@ -10313,7 +10343,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(171, 171, 171, 0.308);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -10333,7 +10363,7 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Calibri, Calibri Light, sans-serif;
   font-weight: 700;
   margin-bottom: 0;
 }
