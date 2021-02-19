@@ -737,14 +737,14 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 980px;
   }
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+  margin-right: 1.75rem;
+  margin-left: 1.75rem;
 }
 
 .no-gutters {
@@ -5545,7 +5545,7 @@ a.close.disabled {
   left: 0;
   z-index: 1050;
   display: none;
-  width: 100%;
+  width: 80%;
   height: 100%;
   overflow: hidden;
   outline: 0;
