@@ -3314,14 +3314,14 @@ input[type=button].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: rgb(87, 90, 97);
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #16181b;
+  color: #567199;
   text-decoration: none;
   background-color: #f8f9fa;
 }
@@ -10313,7 +10313,7 @@ header.masthead .masthead-heading {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 3.25rem;
-  color: rgb(25, 28, 35);
+  color: rgb(87, 90, 97);
   margin-bottom: 2rem;
   font-family: "Calibri Light",Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
 }
