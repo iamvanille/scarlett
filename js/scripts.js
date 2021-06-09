@@ -55,7 +55,7 @@
     $(window).scroll(navbarCollapse);
 
     // hide modal on mobile
-    for (let i = 1; i < 31; i += 1) {
+    for (let i = 1; i < 32; i += 1) {
         let modal = '#portfolioModal' + i;
         $(modal).on('show.bs.modal', function (e) {
             if (window.innerWidth <= 768) {

@@ -10490,7 +10490,10 @@ header.masthead .masthead-heading {
 @media (max-width: 768px) {
   #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     display: none;
-    cursor:text;
+  }
+  header.masthead{
+    padding-top:8.5rem;
+    padding-bottom:2.5rem;
   }
 }
 
