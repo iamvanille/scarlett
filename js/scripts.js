@@ -53,4 +53,13 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    
+    for (let i = 1; i < 31; i += 1) {
+        let modal = '#portfolioModal' + i;
+        $(modal).on('show.bs.modal', function (e) {
+            if (window.innerWidth <= 800) {
+                return e.preventDefault();
+            }
+        })}
 })(jQuery); // End of use strict
