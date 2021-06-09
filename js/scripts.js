@@ -62,4 +62,33 @@
                 return e.preventDefault();
             }
         })}
+    
+    // const container = document.querySelector('#chapter1');
+    
+    // for (let d = 1; d < 13; d++) {
+    //     let enclosingDiv = document.createElement('div');
+    //     enclosingDiv.classList.add('col-lg-4', 'col-sm-6', 'mb-4');
+    //     let portfolioItemDiv = document.createElement('div');
+    //     enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
+    //     let a = document.createElement('a');
+    //     $(a).attr("data-toggle", "modal");
+    //     $(a).attr("href", "#portfolioModalAuto");
+    //     portfolioItemDiv.appendChild(a).className = 'portfolio-link';
+    //     let hoverDiv = document.createElement('div');
+    //     hoverDiv.classList.add('portfolio-hover-content');
+    //     let i = document.createElement('div');
+    //     hoverDiv.appendChild(i);
+    //     let photo = document.createElement('img');
+    //     photo.classList.add('img-fluid');
+    //     $(photo).attr('src','assets/images/Chapitre_I_thumb/Chapitre1_2_thumb.jpg');
+    //     a.appendChild(hoverDiv);
+    //     a.appendChild(photo);
+
+    //     container.appendChild(enclosingDiv).className= 'col-lg-4 col-sm-6 mb-4';
+    // }; 
+
+
+
+
+
 })(jQuery); // End of use strict
