@@ -10163,16 +10163,24 @@ p {
 .page-section {
   padding: 6rem 0;
 }
+.page-section h2.section-heading-contact {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: white;
+}
 .page-section h2.section-heading-top {
   font-size: 2.5rem;
-  font-weight:300;
+  font-weight: 300;
+  margin-top: -2rem;
   margin-bottom: 3rem;
   text-align: center;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
-  font-weight:300;
-  margin-top: 4rem;
+  font-weight: 300;
+  margin-top: -5rem;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -10393,6 +10401,49 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
+  height: 35rem;
+}
+.portfolio-modal .modal-content {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+  height: 35rem;
+}
+.portfolio-modal .modal-content h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.portfolio-modal .modal-content p.item-intro {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 1rem;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 1rem;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 1rem;
+  max-height: 32rem;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.5;
+}
+
+/* .portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
 }
 .portfolio-modal .modal-content {
   padding-top: 0.2rem;
@@ -10426,15 +10477,15 @@ header.masthead .masthead-heading {
   height: 1.5rem;
   cursor: pointer;
   background-color: transparent;
-}
+} */
 .close-modal-X {
   font-family:Arial;
   font-weight:bold;
-  color:#fff
+  color: #154365;
 }
-.portfolio-modal .close-modal:hover {
+/* .portfolio-modal .close-modal:hover {
   opacity: 0.5;
-}
+} */
 
 .timeline {
   position: relative;
