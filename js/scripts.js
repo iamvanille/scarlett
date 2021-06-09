@@ -72,7 +72,10 @@
     //     enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
     //     let a = document.createElement('a');
     //     $(a).attr("data-toggle", "modal");
-    //     $(a).attr("href", "#portfolioModalAuto");
+
+    //     let modalName = '#portfolioModal' + d; 
+    //     $(a).attr("href", modalName);
+    //     console.log($(a).href);
     //     portfolioItemDiv.appendChild(a).className = 'portfolio-link';
     //     let hoverDiv = document.createElement('div');
     //     hoverDiv.classList.add('portfolio-hover-content');
@@ -80,7 +83,9 @@
     //     hoverDiv.appendChild(i);
     //     let photo = document.createElement('img');
     //     photo.classList.add('img-fluid');
-    //     $(photo).attr('src','assets/images/Chapitre_I_thumb/Chapitre1_2_thumb.jpg');
+
+    //     let photoPath = 'assets/images/Chapitre_I_thumb/Chapitre1_' + d + '_thumb.jpg'
+    //     $(photo).attr('src', photoPath);
     //     a.appendChild(hoverDiv);
     //     a.appendChild(photo);
 
