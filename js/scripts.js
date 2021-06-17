@@ -63,35 +63,114 @@
             }
         })}
     
-    // const container = document.querySelector('#chapter1');
+    const containerOne = document.querySelector('#chapter1');
     
+    for (let d = 1; d < 13; d++) {
+        let enclosingDiv = document.createElement('div');
+        let portfolioItemDiv = document.createElement('div');
+        enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
+        let a = document.createElement('a');
+        $(a).attr("data-toggle", "modal");
+
+        $(a).attr("href", '#portfolioModal' + d);
+        console.log($(a).href);
+        portfolioItemDiv.appendChild(a).className = 'portfolio-link';
+        let hoverDiv = document.createElement('div');
+        let i = document.createElement('div');
+        hoverDiv.appendChild(i);
+        let photo = document.createElement('img');
+
+        $(photo).attr('src', 'assets/images/Chapitre_I_thumb/Chapitre1_' + d + '_thumb.jpg');
+        a.appendChild(hoverDiv).className = 'portfolio-hover-content';
+        a.appendChild(photo).className = 'img-fluid';
+
+        containerOne.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
+    }; 
+
+    const containerTwo = document.querySelector('#chapter2');
+    
+    for (let d = 1; d < 13; d++) {
+        let enclosingDiv = document.createElement('div');
+        let portfolioItemDiv = document.createElement('div');
+        enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
+        let a = document.createElement('a');
+        $(a).attr("data-toggle", "modal");
+
+        $(a).attr("href", '#portfolioModalchap2_' + d);
+        console.log($(a).href);
+        portfolioItemDiv.appendChild(a).className = 'portfolio-link';
+        let hoverDiv = document.createElement('div');
+        let i = document.createElement('div');
+        hoverDiv.appendChild(i);
+        let photo = document.createElement('img');
+
+        $(photo).attr('src', 'assets/images/Chapitre_II_thumb/Chapitre2_' + d + '_thumb.jpg');
+        a.appendChild(hoverDiv).className = 'portfolio-hover-content';
+        a.appendChild(photo).className = 'img-fluid';
+
+        containerTwo.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
+    }; 
+
+    const containerThree = document.querySelector('#chapter3');
+    
+    for (let d = 1; d < 11; d++) {
+        let enclosingDiv = document.createElement('div');
+        let portfolioItemDiv = document.createElement('div');
+        enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
+        let a = document.createElement('a');
+        $(a).attr("data-toggle", "modal");
+
+        $(a).attr("href", '#portfolioModalchap3_' + d);
+        console.log($(a).href);
+        portfolioItemDiv.appendChild(a).className = 'portfolio-link';
+        let hoverDiv = document.createElement('div');
+        let i = document.createElement('div');
+        hoverDiv.appendChild(i);
+        let photo = document.createElement('img');
+
+        $(photo).attr('src', 'assets/images/Chapitre_III_thumb/Chapitre3_' + d + '_thumb.jpg');
+        a.appendChild(hoverDiv).className = 'portfolio-hover-content';
+        a.appendChild(photo).className = 'img-fluid';
+
+        containerThree.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
+    }; 
+
+    
+
     // for (let d = 1; d < 13; d++) {
+    //     const modal = document.querySelector('#portfolio-modal');
+        
+    //     let mainModal = document.createElement('div');
+    //     $(mainModal).attr('id', '#portfolioModal' + d);
+    //     $(mainModal).attr('tabindex', '-1');
+    //     $(mainModal).attr('role', 'dialog');
+    //     $(mainModal).attr('aria-hidden', 'true');
+
     //     let enclosingDiv = document.createElement('div');
-    //     enclosingDiv.classList.add('col-lg-4', 'col-sm-6', 'mb-4');
-    //     let portfolioItemDiv = document.createElement('div');
-    //     enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
-    //     let a = document.createElement('a');
-    //     $(a).attr("data-toggle", "modal");
+    //     mainModal.appendChild(enclosingDiv).className = 'modal-dialog';
 
-    //     let modalName = '#portfolioModal' + d; 
-    //     $(a).attr("href", modalName);
-    //     console.log($(a).href);
-    //     portfolioItemDiv.appendChild(a).className = 'portfolio-link';
-    //     let hoverDiv = document.createElement('div');
-    //     hoverDiv.classList.add('portfolio-hover-content');
-    //     let i = document.createElement('div');
-    //     hoverDiv.appendChild(i);
-    //     let photo = document.createElement('img');
-    //     photo.classList.add('img-fluid');
+    //     let modalContentDiv = document.createElement('div');
+    //     enclosingDiv.appendChild(modalContentDiv).className = 'modal-content';
 
-    //     let photoPath = 'assets/images/Chapitre_I_thumb/Chapitre1_' + d + '_thumb.jpg'
-    //     $(photo).attr('src', photoPath);
-    //     a.appendChild(hoverDiv);
-    //     a.appendChild(photo);
+    //     let closeModal = document.createElement('div');
+    //     $(closeModal).attr('data-dismiss', 'modal');
+    //     // $(closeModal).html() = 'X';
+    //     let containerDiv = document.createElement('div');
+    //     modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
+    //     modalContentDiv.appendChild(containerDiv).className = 'container';
 
-    //     container.appendChild(enclosingDiv).className= 'col-lg-4 col-sm-6 mb-4';
-    // }; 
+    //     let row = document.createElement('div');
+    //     containerDiv.appendChild(row).className = 'row', 'justify-content-center';
+    //     let colDiv = document.createElement('div');
+    //     row.appendChild(colDiv).className = 'col-lg-12';
+    //     let modalBody = document.createElement('div');
+    //     colDiv.appendChild(modalBody).className = 'modal-body';
+    //     let img = document.createElement('img');
+    //     $(img).attr('src', 'assets/images/Chapitre_I/Chapitre1_' + d + '.jpg');
+    //     modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
 
+    //     modal.appendChild(mainModal).className = 'portfolio-modal', 'modal', 'fade';
+    // }
 
 
 
