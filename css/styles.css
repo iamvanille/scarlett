@@ -10321,7 +10321,7 @@ header.masthead {
 
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-style: italic;
   line-height: 1.5rem;
   font-weight: 200;
@@ -10410,7 +10410,7 @@ header.masthead .masthead-heading {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   text-align: center;
-  height: 35rem;
+  max-height: 35rem;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
