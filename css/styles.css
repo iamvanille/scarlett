@@ -749,6 +749,7 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-right: 1.75rem;
   margin-left: 1.75rem;
 }
