@@ -54,7 +54,7 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
-    // hide modal on mobile
+    // Van: hide modal on mobile
     for (let i = 1; i < 32; i += 1) {
         let modal = '#portfolioModal' + i;
         $(modal).on('show.bs.modal', function (e) {
@@ -63,116 +63,88 @@
             }
         })}
     
-    const containerOne = document.querySelector('#chapter1');
+
+    // Photo chapters
+    for (let x = 1; x < 4; x++) {
+        let container = document.querySelector('#chapter'+ x);
+
+        let numberOfPhotos = 13;
+        if (x == 3) {
+            numberOfPhotos = 11;
+        } else {
+            numberOfPhotos = 13;
+        };
+
+        for (let d = 1; d < numberOfPhotos; d++) {
+            let enclosingDiv = document.createElement('div');
+            let portfolioItemDiv = document.createElement('div');
+            enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
+            let a = document.createElement('a');
+            $(a).attr("data-toggle", "modal");
     
-    for (let d = 1; d < 13; d++) {
-        let enclosingDiv = document.createElement('div');
-        let portfolioItemDiv = document.createElement('div');
-        enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
-        let a = document.createElement('a');
-        $(a).attr("data-toggle", "modal");
-
-        $(a).attr("href", '#portfolioModal' + d);
-        console.log($(a).href);
-        portfolioItemDiv.appendChild(a).className = 'portfolio-link';
-        let hoverDiv = document.createElement('div');
-        let i = document.createElement('div');
-        hoverDiv.appendChild(i);
-        let photo = document.createElement('img');
-
-        $(photo).attr('src', 'assets/images/Chapitre_I_thumb/Chapitre1_' + d + '_thumb.jpg');
-        a.appendChild(hoverDiv).className = 'portfolio-hover-content';
-        a.appendChild(photo).className = 'img-fluid';
-
-        containerOne.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
-    }; 
-
-    const containerTwo = document.querySelector('#chapter2');
+            $(a).attr("href", '#portfolioModalchap' + x + '_' + d);
+            console.log($(a).href);
+            portfolioItemDiv.appendChild(a).className = 'portfolio-link';
+            let hoverDiv = document.createElement('div');
+            let i = document.createElement('div');
+            hoverDiv.appendChild(i);
+            let photo = document.createElement('img');
     
-    for (let d = 1; d < 13; d++) {
-        let enclosingDiv = document.createElement('div');
-        let portfolioItemDiv = document.createElement('div');
-        enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
-        let a = document.createElement('a');
-        $(a).attr("data-toggle", "modal");
-
-        $(a).attr("href", '#portfolioModalchap2_' + d);
-        console.log($(a).href);
-        portfolioItemDiv.appendChild(a).className = 'portfolio-link';
-        let hoverDiv = document.createElement('div');
-        let i = document.createElement('div');
-        hoverDiv.appendChild(i);
-        let photo = document.createElement('img');
-
-        $(photo).attr('src', 'assets/images/Chapitre_II_thumb/Chapitre2_' + d + '_thumb.jpg');
-        a.appendChild(hoverDiv).className = 'portfolio-hover-content';
-        a.appendChild(photo).className = 'img-fluid';
-
-        containerTwo.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
-    }; 
-
-    const containerThree = document.querySelector('#chapter3');
+            $(photo).attr('src', 'assets/images/Chapitre_' + x + '_thumb/Chapitre' + x + '_' + d + '_thumb.jpg');
+            a.appendChild(hoverDiv).className = 'portfolio-hover-content';
+            a.appendChild(photo).className = 'img-fluid';
     
-    for (let d = 1; d < 11; d++) {
-        let enclosingDiv = document.createElement('div');
-        let portfolioItemDiv = document.createElement('div');
-        enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
-        let a = document.createElement('a');
-        $(a).attr("data-toggle", "modal");
+            container.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
+        }; 
+    };
 
-        $(a).attr("href", '#portfolioModalchap3_' + d);
-        console.log($(a).href);
-        portfolioItemDiv.appendChild(a).className = 'portfolio-link';
-        let hoverDiv = document.createElement('div');
-        let i = document.createElement('div');
-        hoverDiv.appendChild(i);
-        let photo = document.createElement('img');
+    // Modals
+    let body = document.getElementById("page-top");
 
-        $(photo).attr('src', 'assets/images/Chapitre_III_thumb/Chapitre3_' + d + '_thumb.jpg');
-        a.appendChild(hoverDiv).className = 'portfolio-hover-content';
-        a.appendChild(photo).className = 'img-fluid';
-
-        containerThree.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
-    }; 
-
-    
-
-    // for (let d = 1; d < 13; d++) {
-    //     const modal = document.querySelector('#portfolio-modal');
+    for (let y = 0; y < 4; y++) {
         
-    //     let mainModal = document.createElement('div');
-    //     $(mainModal).attr('id', '#portfolioModal' + d);
-    //     $(mainModal).attr('tabindex', '-1');
-    //     $(mainModal).attr('role', 'dialog');
-    //     $(mainModal).attr('aria-hidden', 'true');
-
-    //     let enclosingDiv = document.createElement('div');
-    //     mainModal.appendChild(enclosingDiv).className = 'modal-dialog';
-
-    //     let modalContentDiv = document.createElement('div');
-    //     enclosingDiv.appendChild(modalContentDiv).className = 'modal-content';
-
-    //     let closeModal = document.createElement('div');
-    //     $(closeModal).attr('data-dismiss', 'modal');
-    //     // $(closeModal).html() = 'X';
-    //     let containerDiv = document.createElement('div');
-    //     modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
-    //     modalContentDiv.appendChild(containerDiv).className = 'container';
-
-    //     let row = document.createElement('div');
-    //     containerDiv.appendChild(row).className = 'row', 'justify-content-center';
-    //     let colDiv = document.createElement('div');
-    //     row.appendChild(colDiv).className = 'col-lg-12';
-    //     let modalBody = document.createElement('div');
-    //     colDiv.appendChild(modalBody).className = 'modal-body';
-    //     let img = document.createElement('img');
-    //     $(img).attr('src', 'assets/images/Chapitre_I/Chapitre1_' + d + '.jpg');
-    //     modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
-
-    //     modal.appendChild(mainModal).className = 'portfolio-modal', 'modal', 'fade';
-    // }
+        let numberOfPhotos = 13;
+        if (y == 3) {
+            numberOfPhotos = 11;
+        } else {
+            numberOfPhotos = 13;
+        };
 
 
+        for (let d = 1; d < numberOfPhotos; d++) {
 
+            let mainModal = document.createElement('div');
+            $(mainModal).attr('id', 'portfolioModalchap' + y + '_' + d);
+            $(mainModal).attr('tabindex', '-1');
+            $(mainModal).attr('role', 'dialog');
+            $(mainModal).attr('aria-hidden', 'true');
+
+            let modalDialogDiv = document.createElement('div');
+            mainModal.appendChild(modalDialogDiv).className = 'modal-dialog';
+
+            let modalContentDiv = document.createElement('div');
+            modalDialogDiv.appendChild(modalContentDiv).className = 'modal-content';
+
+            let closeModal = document.createElement('div');
+            $(closeModal).attr('data-dismiss', 'modal');
+            closeModal.innerHTML = 'X';
+            console.log(closeModal.innerHTML);
+            let containerDiv = document.createElement('div');
+            modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
+            modalContentDiv.appendChild(containerDiv).className = 'container';
+
+            let row = document.createElement('div');
+            containerDiv.appendChild(row).className = 'row', 'justify-content-center';
+            let colDiv = document.createElement('div');
+            row.appendChild(colDiv).className = 'col-lg-12';
+            let modalBody = document.createElement('div');
+            colDiv.appendChild(modalBody).className = 'modal-body';
+            let img = document.createElement('img');
+            $(img).attr('src', 'assets/images/Chapitre_' + y + '/Chapitre' + y + '_' + d + '.jpg');
+            modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
+
+            body.appendChild(mainModal).classList = "portfolio-modal modal fade";
+        };
+    };
 
 })(jQuery); // End of use strict
