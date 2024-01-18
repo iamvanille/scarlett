@@ -62,17 +62,6 @@
                 return e.preventDefault();
             }
         })}
-        (let y = 1; y < 4; y++) {
-        
-            let numberOfPhotos = 17;
-            // set number of photos for categories
-            if (y == 1) {
-                numberOfPhotos = 17;
-            } else if (y == 2) {
-                numberOfPhotos = 16;
-            } else {
-                numberOfPhotos = 15;
-            };
     
 
     // Photo chapters
@@ -117,7 +106,7 @@
     for (let y = 1; y < 4; y++) {
         
         let numberOfPhotos = 17;
-        // set number of photos for categories
+        // set number of photos per category
         if (y == 1) {
             numberOfPhotos = 17;
         } else if (y == 2) {
@@ -145,7 +134,7 @@
             let closeModal = document.createElement('div');
             $(closeModal).attr('data-dismiss', 'modal');
             closeModal.innerHTML = 'X';
-            // console.log(closeModal.innerHTML);
+            
             let containerDiv = document.createElement('div');
             modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
             modalContentDiv.appendChild(containerDiv).className = 'container';
