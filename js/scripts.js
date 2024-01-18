@@ -103,12 +103,16 @@
 
     for (let y = 0; y < 4; y++) {
         
-        let numberOfPhotos = 13;
-        if (y == 3) {
-            numberOfPhotos = 11;
+        let numberOfPhotos = 17;
+        // set number of photos for categories
+        if (y == 1) {
+            numberOfPhotos = 17;
+        } else if (y == 2) {
+            numberOfPhotos = 16;
         } else {
-            numberOfPhotos = 13;
+            numberOfPhotos = 14;
         };
+
 
 
         for (let d = 1; d < numberOfPhotos; d++) {
