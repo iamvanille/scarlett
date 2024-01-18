@@ -101,7 +101,7 @@
     // Modals
     let body = document.getElementById("page-top");
 
-    for (let y = 0; y < 4; y++) {
+    for (let y = 1; y < 4; y++) {
         
         let numberOfPhotos = 17;
         // set number of photos for categories
