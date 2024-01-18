@@ -62,17 +62,30 @@
                 return e.preventDefault();
             }
         })}
+        (let y = 1; y < 4; y++) {
+        
+            let numberOfPhotos = 17;
+            // set number of photos for categories
+            if (y == 1) {
+                numberOfPhotos = 17;
+            } else if (y == 2) {
+                numberOfPhotos = 16;
+            } else {
+                numberOfPhotos = 15;
+            };
     
 
     // Photo chapters
     for (let x = 1; x < 4; x++) {
         let container = document.querySelector('#chapter'+ x);
 
-        let numberOfPhotos = 13;
-        if (x == 3) {
-            numberOfPhotos = 11;
+        let numberOfPhotos = 17;
+        if (x == 1) {
+            numberOfPhotos = 17;
+        } else if (x == 2) {
+            numberOfPhotos = 16;
         } else {
-            numberOfPhotos = 13;
+            numberOfPhotos = 15;
         };
 
         for (let d = 1; d < numberOfPhotos; d++) {
