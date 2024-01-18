@@ -145,7 +145,7 @@
             let closeModal = document.createElement('div');
             $(closeModal).attr('data-dismiss', 'modal');
             closeModal.innerHTML = 'X';
-            console.log(closeModal.innerHTML);
+            // console.log(closeModal.innerHTML);
             let containerDiv = document.createElement('div');
             modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
             modalContentDiv.appendChild(containerDiv).className = 'container';
