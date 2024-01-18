@@ -110,7 +110,7 @@
         } else if (y == 2) {
             numberOfPhotos = 16;
         } else {
-            numberOfPhotos = 14;
+            numberOfPhotos = 15;
         };
 
 
