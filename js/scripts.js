@@ -123,37 +123,37 @@
 
         for (let d = 1; d < numberOfPhotos; d++) {
 
-            let mainModal = document.createElement('div');
-            $(mainModal).attr('id', 'portfolioModalchap' + y + '_' + d);
-            $(mainModal).attr('tabindex', '-1');
-            $(mainModal).attr('role', 'dialog');
-            $(mainModal).attr('aria-hidden', 'true');
+          let mainModal = document.createElement('div');
+          $(mainModal).attr('id', 'portfolioModalchap' + y + '_' + d);
+          $(mainModal).attr('tabindex', '-1');
+          $(mainModal).attr('role', 'dialog');
+          $(mainModal).attr('aria-hidden', 'true');
 
-            let modalDialogDiv = document.createElement('div');
-            mainModal.appendChild(modalDialogDiv).className = 'modal-dialog';
+          let modalDialogDiv = document.createElement('div');
+          mainModal.appendChild(modalDialogDiv).className = 'modal-dialog';
 
-            let modalContentDiv = document.createElement('div');
-            modalDialogDiv.appendChild(modalContentDiv).className = 'modal-content';
+          let modalContentDiv = document.createElement('div');
+          modalDialogDiv.appendChild(modalContentDiv).className = 'modal-content';
 
-            let closeModal = document.createElement('div');
-            $(closeModal).attr('data-dismiss', 'modal');
-            closeModal.innerHTML = 'X';
-            
-            let containerDiv = document.createElement('div');
-            modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
-            modalContentDiv.appendChild(containerDiv).className = 'container';
+          let closeModal = document.createElement('div');
+          $(closeModal).attr('data-dismiss', 'modal');
+          closeModal.innerHTML = 'X';
+          
+          let containerDiv = document.createElement('div');
+          modalContentDiv.appendChild(closeModal).className = 'close-modal', 'close-modal-X';
+          modalContentDiv.appendChild(containerDiv).className = 'container';
 
-            let row = document.createElement('div');
-            containerDiv.appendChild(row).className = 'row', 'justify-content-center';
-            let colDiv = document.createElement('div');
-            row.appendChild(colDiv).className = 'col-lg-12';
-            let modalBody = document.createElement('div');
-            colDiv.appendChild(modalBody).className = 'modal-body';
-            let img = document.createElement('img');
-            $(img).attr('src', 'assets/images/Chapitre_' + y + '/Chapitre' + y + '_' + d + '.jpg');
-            modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
+          let row = document.createElement('div');
+          containerDiv.appendChild(row).className = 'row', 'justify-content-center';
+          let colDiv = document.createElement('div');
+          row.appendChild(colDiv).className = 'col-lg-12';
+          let modalBody = document.createElement('div');
+          colDiv.appendChild(modalBody).className = 'modal-body';
+          let img = document.createElement('img');
+          $(img).attr('src', 'assets/images/Chapitre_' + y + '/Chapitre' + y + '_' + d + '.jpg');
+          modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
 
-            body.appendChild(mainModal).classList = "portfolio-modal modal fade";
+          body.appendChild(mainModal).classList = "portfolio-modal modal fade";
         };
     };
 
