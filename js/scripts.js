@@ -65,54 +65,58 @@
     
 
     // Photo chapters
-    for (let x = 1; x < 4; x++) {
-        let container = document.querySelector('#chapter'+ x);
+    for (let x = 1; x < 5; x++) {
+      let container = document.querySelector('#chapter'+ x);
+      
 
-        let numberOfPhotos = 17;
-        if (x == 1) {
-            numberOfPhotos = 17;
-        } else if (x == 2) {
-            numberOfPhotos = 16;
-        } else {
-            numberOfPhotos = 15;
-        };
+      let numberOfPhotos = 19;
+      if (x == 1) {
+          numberOfPhotos = 21;
+      } else if (x == 2) {
+          numberOfPhotos = 20;
+      } else if (x == 3) {
+          numberOfPhotos = 20;
+      } else if (x == 4) {
+          numberOfPhotos = 14;
+      };
 
-        for (let d = 1; d < numberOfPhotos; d++) {
-            let enclosingDiv = document.createElement('div');
-            let portfolioItemDiv = document.createElement('div');
-            enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
-            let a = document.createElement('a');
-            $(a).attr("data-toggle", "modal");
-    
-            $(a).attr("href", '#portfolioModalchap' + x + '_' + d);
-            console.log($(a).href);
-            portfolioItemDiv.appendChild(a).className = 'portfolio-link';
-            let hoverDiv = document.createElement('div');
-            let i = document.createElement('div');
-            hoverDiv.appendChild(i);
-            let photo = document.createElement('img');
-    
-            $(photo).attr('src', 'assets/images/Chapitre_' + x + '_thumb/Chapitre' + x + '_' + d + '_thumb.jpg');
-            a.appendChild(hoverDiv).className = 'portfolio-hover-content';
-            a.appendChild(photo).className = 'img-fluid';
-    
-            container.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
-        }; 
+      for (let d = 1; d < numberOfPhotos; d++) {
+          let enclosingDiv = document.createElement('div');
+          let portfolioItemDiv = document.createElement('div');
+          enclosingDiv.appendChild(portfolioItemDiv).className = 'portfolio-item';
+          let a = document.createElement('a');
+          $(a).attr("data-toggle", "modal");
+  
+          $(a).attr("href", '#portfolioModalchap' + x + '_' + d);
+          console.log($(a).href);
+          portfolioItemDiv.appendChild(a).className = 'portfolio-link';
+          let hoverDiv = document.createElement('div');
+          let i = document.createElement('div');
+          hoverDiv.appendChild(i);
+          let photo = document.createElement('img');
+  
+          $(photo).attr('src', 'assets/images/Chapitre_' + x + '_thumb/Chapitre' + x + '_' + d + '_thumb.jpg');
+          a.appendChild(hoverDiv).className = 'portfolio-hover-content';
+          a.appendChild(photo).className = 'img-fluid';
+  
+          container.appendChild(enclosingDiv).className = 'col-lg-4 col-sm-6 mb-4';
+      }; 
     };
 
     // Modals
     let body = document.getElementById("page-top");
 
-    for (let y = 1; y < 4; y++) {
+    for (let y = 1; y < 5; y++) {
         
-        let numberOfPhotos = 17;
-        // set number of photos per category
-        if (y == 1) {
-            numberOfPhotos = 17;
-        } else if (y == 2) {
-            numberOfPhotos = 16;
-        } else {
-            numberOfPhotos = 15;
+        let numberOfPhotos = 19;
+        if (x == 1) {
+            numberOfPhotos = 21;
+        } else if (x == 2) {
+            numberOfPhotos = 20;
+        } else if (x == 3) {
+            numberOfPhotos = 20;
+        } else if (x == 4) {
+            numberOfPhotos = 14;
         };
 
 
