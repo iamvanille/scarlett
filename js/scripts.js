@@ -106,7 +106,7 @@
     // Modals
     let body = document.getElementById("page-top");
 
-    for (let y = 1; y < 5; y++) {
+    for (let x = 1; x < 5; x++) {
         
         let numberOfPhotos = 19;
         if (x == 1) {
