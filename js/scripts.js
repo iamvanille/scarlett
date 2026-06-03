@@ -150,7 +150,7 @@
           let modalBody = document.createElement('div');
           colDiv.appendChild(modalBody).className = 'modal-body';
           let img = document.createElement('img');
-          $(img).attr('src', 'assets/images/Chapitre_' + y + '/Chapitre' + y + '_' + d + '.jpg');
+          $(img).attr('src', 'assets/images/Chapitre_' + x + '/Chapitre' + x + '_' + d + '.jpg');
           modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
 
           body.appendChild(mainModal).classList = "portfolio-modal modal fade";
