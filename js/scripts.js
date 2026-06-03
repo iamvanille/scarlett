@@ -124,7 +124,7 @@
         for (let d = 1; d < numberOfPhotos; d++) {
 
           let mainModal = document.createElement('div');
-          $(mainModal).attr('id', 'portfolioModalchap' + y + '_' + d);
+          $(mainModal).attr('id', 'portfolioModalchap' + x + '_' + d);
           $(mainModal).attr('tabindex', '-1');
           $(mainModal).attr('role', 'dialog');
           $(mainModal).attr('aria-hidden', 'true');
