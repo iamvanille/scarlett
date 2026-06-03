@@ -106,16 +106,16 @@
     // Modals
     let body = document.getElementById("page-top");
 
-    for (let x = 1; x < 5; x++) {
+    for (let y = 1; y < 5; y++) {
         
         let numberOfPhotos = 19;
-        if (x == 1) {
+        if (y == 1) {
             numberOfPhotos = 21;
-        } else if (x == 2) {
+        } else if (y == 2) {
             numberOfPhotos = 20;
-        } else if (x == 3) {
+        } else if (y == 3) {
             numberOfPhotos = 20;
-        } else if (x == 4) {
+        } else if (y == 4) {
             numberOfPhotos = 14;
         };
 
@@ -124,7 +124,7 @@
         for (let d = 1; d < numberOfPhotos; d++) {
 
           let mainModal = document.createElement('div');
-          $(mainModal).attr('id', 'portfolioModalchap' + x + '_' + d);
+          $(mainModal).attr('id', 'portfolioModalchap' + y + '_' + d);
           $(mainModal).attr('tabindex', '-1');
           $(mainModal).attr('role', 'dialog');
           $(mainModal).attr('aria-hidden', 'true');
@@ -150,7 +150,7 @@
           let modalBody = document.createElement('div');
           colDiv.appendChild(modalBody).className = 'modal-body';
           let img = document.createElement('img');
-          $(img).attr('src', 'assets/images/Chapitre_' + x + '/Chapitre' + x + '_' + d + '.jpg');
+          $(img).attr('src', 'assets/images/Chapitre_' + y + '/Chapitre' + y + '_' + d + '.jpg');
           modalBody.appendChild(img).className = 'img-fluid', 'd-block', 'mx-auto';
 
           body.appendChild(mainModal).classList = "portfolio-modal modal fade";
